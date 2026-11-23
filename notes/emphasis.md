@@ -16,3 +16,4 @@ The reverse technique is often better: instead of making the important thing lou
 - [Visual weight](visual-weight.md)
 - [Visual hierarchy](visual-hierarchy.md)
 - [Accent colour](accent-colour.md): emphasis by colour
+- [Bolder](bolder.md), [Quieter](quieter.md): turning emphasis up or down across a whole design
