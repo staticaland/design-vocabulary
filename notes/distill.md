@@ -16,13 +16,13 @@ Common moves:
 - **Progressive disclosure:** showing only what is needed now, with detail available on request, for example behind "Advanced settings" or a "Show more" link.
 - **Removing redundancy:** saying something once, and dropping a heading that repeats the sentence beneath it.
 - **Flattening:** removing containers that add nothing. See [[nesting]] and [[card]].
-- **Fewer styles:** a smaller [[colour-palette]], and fewer sizes and weights.
+- **Fewer styles:** a smaller [[colour-palette|colour palette]], and fewer sizes and weights.
 
 Distilling removes obstacles, not capability. It goes wrong when it hides something users need in order to decide, removes labels until the interface becomes a puzzle, or makes a complex task look simpler than it is.
 
 ## Related
 
-- [[quieter|Quieter]], [[bolder|Bolder]]: the other [[steering-words]]
+- [[quieter|Quieter]], [[bolder|Bolder]]: the other [[steering-words|steering words]]
 - [[nesting|Nesting]], [[card|Card]]: frequent targets
 - [[visual-hierarchy|Visual hierarchy]]: what should be clearer afterwards
 - [[squint-test|Squint test]]: a quick way to see whether clutter remains

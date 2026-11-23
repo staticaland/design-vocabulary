@@ -12,7 +12,7 @@ Bolder does not mean more of everything. Adding gradients, shadows, and extra co
 
 What works:
 
-- **Amplify what is already there.** Use the existing [[type-scale]] at its largest step and the existing [[accent-colour]] with more conviction, instead of bringing in new fonts or colours. The result should look more like the same brand, not like a different one.
+- **Amplify what is already there.** Use the existing [[type-scale|type scale]] at its largest step and the existing [[accent-colour|accent colour]] with more conviction, instead of bringing in new fonts or colours. The result should look more like the same brand, not like a different one.
 - **Make one decisive move, fully.** One very large heading, or one strong block of colour. A half-measure reads as a mistake.
 - **Quiet the surroundings.** The move is only visible against calm neighbours.
 

@@ -6,7 +6,7 @@ It is the cheapest grouping tool there is, since it needs no extra ink: no lines
 
 The classic failure is uniform spacing, where everything is the same distance from everything else and the structure has to be worked out by reading.
 
-Proximity is tried first. Only when it is not enough is a stronger tool such as [[common-region]] added.
+Proximity is tried first. Only when it is not enough is a stronger tool such as [[common-region|common region]] added.
 
 ## Related
 

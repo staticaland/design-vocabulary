@@ -1,10 +1,11 @@
 // Note explorer: a list, a note, and a graph of how the notes connect.
 const SVG = 'http://www.w3.org/2000/svg';
-const TYPE_LABEL = { concept: 'Concept', 'steering-word': 'Steering word', map: 'Entry point' };
+const TYPE_LABEL = { concept: 'Concept', 'steering-word': 'Steering word', source: 'Source', map: 'Entry point' };
 const GROUPS = [
   ['map', 'Start here'],
   ['steering-word', 'Steering words'],
   ['concept', 'Concepts'],
+  ['source', 'Sources'],
 ];
 
 const $ = (id) => document.getElementById(id);
@@ -211,7 +212,7 @@ const legend = () =>
   el(
     'ul',
     { class: 'legend', 'aria-label': 'Legend' },
-    ...[['concept', 'Concept'], ['steering-word', 'Steering word'], ['map', 'Entry point']].map(
+    ...['concept', 'steering-word', 'source', 'map'].map((type) => [type, TYPE_LABEL[type]]).map(
       ([type, text]) => el('li', { class: type }, el('i'), text),
     ),
   );
