@@ -6,9 +6,9 @@ Instead of writing `#2563eb` or `16px` in fifty places, code refers to `color-ac
 
 Tokens come in layers. A **primitive** token names a raw value (`blue-600`). A **semantic** token names a purpose and points at a primitive (`color-action` → `blue-600`). Semantic tokens are what make "each colour means the same thing everywhere" enforceable.
 
-A **one-off value** is the opposite: a literal typed directly into one component (`margin-top: 13px`). One-offs are how a [spacing scale](spacing-scale.md), [type scale](type-scale.md), or [palette](colour-palette.md) drifts, so a polish fix should use an existing token rather than add a new literal.
+A **one-off value** is the opposite: a literal typed directly into one component (`margin-top: 13px`). One-offs are how a [[spacing-scale]], [[type-scale]], or [[colour-palette|palette]] drifts, so a polish fix should use an existing token rather than add a new literal.
 
 ## Related
 
-- [Spacing scale](spacing-scale.md), [Type scale](type-scale.md), [Colour palette](colour-palette.md): the systems that tokens encode
-- [Visual polish](visual-polish.md)
+- [[spacing-scale|Spacing scale]], [[type-scale|Type scale]], [[colour-palette|Colour palette]]: the systems that tokens encode
+- [[visual-polish|Visual polish]]

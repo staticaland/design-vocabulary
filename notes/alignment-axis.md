@@ -10,6 +10,6 @@ To **anchor** an element is to give it that reason by putting it on an edge some
 
 ## Related
 
-- [Alignment](alignment.md)
-- [Grid](grid.md): a way to decide the axes in advance
-- [Padding](padding.md): a common cause of accidental extra axes, when nested containers each add their own inset
+- [[alignment|Alignment]]
+- [[grid|Grid]]: a way to decide the axes in advance
+- [[padding|Padding]]: a common cause of accidental extra axes, when nested containers each add their own inset

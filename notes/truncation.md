@@ -10,4 +10,4 @@ Variants: single-line truncation, multi-line truncation (line clamping), and mid
 
 ## Related
 
-- [Overflow](overflow.md)
+- [[overflow|Overflow]]

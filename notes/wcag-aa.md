@@ -4,7 +4,7 @@ The middle conformance level of the Web Content Accessibility Guidelines, and th
 
 WCAG is the W3C's standard for accessible web content. Its requirements ("success criteria") are graded A, AA, or AAA, from the minimum to the strictest.
 
-For [contrast](contrast.md), AA means:
+For [[contrast]], AA means:
 
 | What | Minimum ratio |
 | --- | --- |
@@ -18,5 +18,5 @@ Browser developer tools show the ratio for any text element, so it can be checke
 
 ## Related
 
-- [Contrast](contrast.md)
-- [Colour palette](colour-palette.md)
+- [[contrast|Contrast]]
+- [[colour-palette|Colour palette]]

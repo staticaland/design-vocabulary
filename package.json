@@ -1,0 +1,12 @@
+{
+  "name": "design-vocabulary",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node site/build.mjs",
+    "serve": "node site/build.mjs && npx --yes serve dist"
+  },
+  "devDependencies": {
+    "marked": "^14.1.4"
+  }
+}

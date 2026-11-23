@@ -8,6 +8,7 @@ Polish is checked on the rendered result, not the code. Code can look tidy and s
 
 ## Related
 
-- [Alignment](alignment.md), [Spacing scale](spacing-scale.md), [Visual hierarchy](visual-hierarchy.md): the three areas where most polish issues live
-- [Squint test](squint-test.md): a quick way to check the overall result
-- [Design tokens](design-tokens.md): what keeps polish from eroding
+- [[alignment|Alignment]], [[spacing-scale|Spacing scale]], [[visual-hierarchy|Visual hierarchy]]: the three areas where most polish issues live
+- [[squint-test|Squint test]]: a quick way to check the overall result
+- [[design-tokens|Design tokens]]: what keeps polish from eroding
+- [[steering-words|Steering words]]: for when the design needs a change of direction, not refinement

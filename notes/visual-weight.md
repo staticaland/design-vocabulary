@@ -2,7 +2,7 @@
 
 How strongly an element pulls the eye, compared with what is around it.
 
-Weight is not one property but the sum of several. An element is heavier when it is larger, darker or more saturated, filled instead of outlined, thickly bordered, higher in [contrast](contrast.md) with its background, or surrounded by more empty space.
+Weight is not one property but the sum of several. An element is heavier when it is larger, darker or more saturated, filled instead of outlined, thickly bordered, higher in [[contrast]] with its background, or surrounded by more empty space.
 
 Two rules follow:
 
@@ -11,7 +11,8 @@ Two rules follow:
 
 ## Related
 
-- [Visual hierarchy](visual-hierarchy.md): what weight is used to build
-- [Emphasis](emphasis.md)
-- [Font weight](font-weight.md): one contributor, not to be confused with the general term
-- [Squint test](squint-test.md)
+- [[visual-hierarchy|Visual hierarchy]]: what weight is used to build
+- [[emphasis|Emphasis]]
+- [[font-weight|Font weight]]: one contributor, not to be confused with the general term
+- [[squint-test|Squint test]]
+- [[bolder|Bolder]], [[quieter|Quieter]]: [[steering-words]] for raising or lowering weight across a whole design
