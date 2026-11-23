@@ -8,10 +8,10 @@ It is one of three kinds of space in the CSS box model, and the difference matte
 
 - **Padding:** inside the element's border.
 - **Margin:** outside the element's border, pushing other elements away.
-- **[Gap](gap.md):** between the children of a container, owned by the parent.
+- **[[gap|Gap]]:** between the children of a container, owned by the parent.
 
 ## Related
 
-- [Gap](gap.md)
-- [Spacing scale](spacing-scale.md): where padding values should come from
-- [Common region](common-region.md): a region needs padding to read as a region
+- [[gap|Gap]]
+- [[spacing-scale|Spacing scale]]: where padding values should come from
+- [[common-region|Common region]]: a region needs padding to read as a region

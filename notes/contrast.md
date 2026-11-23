@@ -6,12 +6,12 @@ Low contrast makes text hard to read for everyone in poor conditions (sunlight, 
 
 It is measured as a **contrast ratio**, calculated from the relative luminance of the two colours. The ratio runs from 1:1 (identical colours) to 21:1 (black on white). Hue plays no direct part: red on green can be vivid and still have a ratio near 1:1.
 
-The thresholds in common use come from [WCAG](wcag-aa.md).
+The thresholds in common use come from [[wcag-aa|WCAG]].
 
-Contrast is also a tool for [visual hierarchy](visual-hierarchy.md): secondary text is often made lower in contrast than primary text. The accessibility minimum sets the floor on how far that can go.
+Contrast is also a tool for [[visual-hierarchy]]: secondary text is often made lower in contrast than primary text. The accessibility minimum sets the floor on how far that can go.
 
 ## Related
 
-- [WCAG AA](wcag-aa.md)
-- [Visual weight](visual-weight.md)
-- [Colour palette](colour-palette.md)
+- [[wcag-aa|WCAG AA]]
+- [[visual-weight|Visual weight]]
+- [[colour-palette|Colour palette]]

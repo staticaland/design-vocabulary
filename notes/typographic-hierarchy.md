@@ -1,6 +1,6 @@
 # Typographic hierarchy
 
-[Visual hierarchy](visual-hierarchy.md) applied to text: using size, [weight](font-weight.md), and colour so that a reader can tell headings, body text, and labels apart at a glance.
+[[visual-hierarchy|Visual hierarchy]] applied to text: using size, [[font-weight|weight]], and colour so that a reader can tell headings, body text, and labels apart at a glance.
 
 The usual roles:
 
@@ -12,6 +12,6 @@ A clear hierarchy uses a limited set of styles, each tied to a role. The warning
 
 ## Related
 
-- [Type scale](type-scale.md): the sizes
-- [Font weight](font-weight.md): the weights
-- [Visual hierarchy](visual-hierarchy.md)
+- [[type-scale|Type scale]]: the sizes
+- [[font-weight|Font weight]]: the weights
+- [[visual-hierarchy|Visual hierarchy]]

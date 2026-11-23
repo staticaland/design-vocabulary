@@ -15,6 +15,6 @@ The method is to start from the mathematical position and then adjust by eye, us
 
 ## Related
 
-- [Alignment](alignment.md)
-- [Baseline](baseline.md)
-- [Visual weight](visual-weight.md): the "mass" being balanced
+- [[alignment|Alignment]]
+- [[baseline|Baseline]]
+- [[visual-weight|Visual weight]]: the "mass" being balanced

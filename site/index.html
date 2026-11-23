@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design vocabulary</title>
+  <meta name="description" content="Short, linked notes on design vocabulary.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to note</a>
+  <div class="layout">
+    <header class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <a class="brand" href="#/">Design vocabulary</a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">Notes</button>
+      </div>
+      <nav class="nav" id="nav" aria-label="Notes">
+        <label class="search">
+          <span class="visually-hidden">Search notes</span>
+          <input id="search" type="search" placeholder="Search notes" autocomplete="off" spellcheck="false">
+          <kbd aria-hidden="true">/</kbd>
+        </label>
+        <div id="note-list"></div>
+      </nav>
+    </header>
+    <main class="main" id="main" tabindex="-1"></main>
+    <aside class="rail" id="rail" aria-label="Connections"></aside>
+  </div>
+  <div class="preview" id="preview" role="tooltip" hidden></div>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

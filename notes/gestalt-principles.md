@@ -6,13 +6,13 @@ The core idea is that perception groups things automatically, before any conscio
 
 The principles most used in UI design:
 
-- **[Proximity](proximity.md):** things close together are seen as a group.
-- **[Common region](common-region.md):** things inside the same boundary are seen as a group.
+- **[[proximity|Proximity]]:** things close together are seen as a group.
+- **[[common-region|Common region]]:** things inside the same boundary are seen as a group.
 - **Similarity:** things that look alike (colour, shape, size) are seen as related.
-- **Continuity:** things on a line or curve are seen as belonging together. This is why [alignment](alignment.md) groups.
+- **Continuity:** things on a line or curve are seen as belonging together. This is why [[alignment]] groups.
 
 ## Related
 
-- [Proximity](proximity.md)
-- [Common region](common-region.md)
-- [Squint test](squint-test.md): a way to see the groupings perception actually produces
+- [[proximity|Proximity]]
+- [[common-region|Common region]]
+- [[squint-test|Squint test]]: a way to see the groupings perception actually produces

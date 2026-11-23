@@ -8,9 +8,9 @@ There are three clean ways to handle it:
 
 - **Wrap:** let the content flow onto more lines and the container grow taller.
 - **Scroll:** keep the container's size and let the content scroll inside it.
-- **Truncate:** cut the content short. See [truncation](truncation.md).
+- **Truncate:** cut the content short. See [[truncation]].
 
 ## Related
 
-- [Truncation](truncation.md)
-- [Padding](padding.md): overflowing content often eats the padding first
+- [[truncation|Truncation]]
+- [[padding|Padding]]: overflowing content often eats the padding first
