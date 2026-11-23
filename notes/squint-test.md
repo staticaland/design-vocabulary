@@ -1,8 +1,8 @@
 # Squint test
 
-A quick check of [[visual-hierarchy]]: squint at the screen, or blur a screenshot, until the detail disappears, and see what still stands out.
+A quick check of [[visual-hierarchy|visual hierarchy]]: squint at the screen, or blur a screenshot, until the detail disappears, and see what still stands out.
 
-Blurring removes the text and leaves only blobs of [[visual-weight]] and the spaces between them. That is roughly what a user takes in during the first moment on a page, before reading anything.
+Blurring removes the text and leaves only blobs of [[visual-weight|visual weight]] and the spaces between them. That is roughly what a user takes in during the first moment on a page, before reading anything.
 
 Two things should survive:
 

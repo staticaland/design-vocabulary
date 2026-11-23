@@ -6,7 +6,7 @@ type: map
 
 An entry point, not a concept. It maps the checklist in the [polish-ui skill](https://github.com/staticaland/skills/tree/main/plugins/polish-ui) to the notes that explain its vocabulary.
 
-Start with [[visual-polish]] for what the skill is after as a whole.
+Start with [[visual-polish|visual polish]] for what the skill is after as a whole.
 
 Each check in the skill, and the notes behind it:
 

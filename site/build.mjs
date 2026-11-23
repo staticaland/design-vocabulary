@@ -29,7 +29,7 @@ function parseFrontmatter(src) {
 // Markdown to plain text, for summaries and search.
 const plain = (md) =>
   md
-    .replace(WIKILINK, (_, target, alias) => alias || target.trim().replace(/-/g, ' '))
+    .replace(WIKILINK, (_, target, alias) => alias || target.trim())
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     .replace(/^#+\s+/gm, '')
     .replace(/^\s*[-*]\s+/gm, '')
@@ -53,9 +53,12 @@ for (const file of files) {
   const content = body.replace(/^#\s+.+\n/m, '').trim();
 
   const links = [];
-  const withLinks = content.replace(WIKILINK, (_, rawTarget, alias) => {
+  // Links inside code spans and code blocks are left alone, as in Obsidian.
+  const CODE_OR_LINK = new RegExp('(```[\\s\\S]*?```|`[^`\\n]*`)|' + WIKILINK.source, 'g');
+  const withLinks = content.replace(CODE_OR_LINK, (match, code, rawTarget, alias) => {
+    if (code) return code;
     const target = rawTarget.trim();
-    const text = escapeHtml((alias || target.replace(/-/g, ' ')).trim());
+    const text = escapeHtml((alias || target).trim());
     if (!ids.has(target)) {
       errors.push(`${file}: link to missing note [[${target}]]`);
       return text;

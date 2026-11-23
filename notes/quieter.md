@@ -10,8 +10,8 @@ It is the answer to a design that shouts: too many saturated colours, heavy elem
 
 The sources of loudness, and the matching moves:
 
-- **Colour:** lower the saturation, use fewer colours, and let neutrals carry most of the surface, with the [[accent-colour]] kept for a few places.
-- **Weight:** lighter [[font-weight|font weights]], thinner or no borders, fewer filled shapes. See [[visual-weight]].
+- **Colour:** lower the saturation, use fewer colours, and let neutrals carry most of the surface, with the [[accent-colour|accent colour]] kept for a few places.
+- **Weight:** lighter [[font-weight|font weights]], thinner or no borders, fewer filled shapes. See [[visual-weight|visual weight]].
 - **Space:** more room between elements and lower density.
 - **Decoration:** fewer shadows, gradients, and glows.
 - **Motion:** shorter, gentler animation, kept only where it tells the user something.

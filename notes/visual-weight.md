@@ -15,4 +15,4 @@ Two rules follow:
 - [[emphasis|Emphasis]]
 - [[font-weight|Font weight]]: one contributor, not to be confused with the general term
 - [[squint-test|Squint test]]
-- [[bolder|Bolder]], [[quieter|Quieter]]: [[steering-words]] for raising or lowering weight across a whole design
+- [[bolder|Bolder]], [[quieter|Quieter]]: [[steering-words|steering words]] for raising or lowering weight across a whole design

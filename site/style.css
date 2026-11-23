@@ -7,6 +7,7 @@
   --line: #e0dcd3;
   --accent: #b4451f;
   --steer: #1f6f6b;
+  --source: #5a5ea6;
   --node: #8a847a;
 
   --space-1: 4px;
@@ -37,6 +38,7 @@
     --line: #35322d;
     --accent: #ec8c64;
     --steer: #74c5bf;
+    --source: #a5a8e8;
     --node: #8f897e;
   }
 }
@@ -204,6 +206,7 @@ a { color: inherit; }
 }
 
 .eyebrow.steering-word { color: var(--steer); }
+.eyebrow.source { color: var(--source); }
 
 h1 {
   margin: 0 0 var(--space-5);
@@ -302,6 +305,7 @@ h1 {
 .legend li { display: flex; align-items: center; gap: var(--space-2); }
 .legend i { width: 9px; height: 9px; border-radius: 50%; background: var(--node); }
 .legend .steering-word i { background: var(--steer); }
+.legend .source i { background: var(--source); }
 .legend .map i { background: var(--bg); box-shadow: inset 0 0 0 2px var(--node); }
 
 .graph { display: block; width: 100%; height: auto; overflow: visible; }
@@ -309,6 +313,7 @@ h1 {
 .graph .node { cursor: pointer; }
 .graph .node circle { fill: var(--node); stroke: var(--bg); stroke-width: 1.5; }
 .graph .node.steering-word circle { fill: var(--steer); }
+.graph .node.source circle { fill: var(--source); }
 .graph .node.map circle { fill: var(--bg); stroke: var(--node); stroke-width: 2; }
 .graph .node.current circle { fill: var(--accent); stroke: var(--accent); }
 .graph .node text {

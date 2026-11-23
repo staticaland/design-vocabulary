@@ -8,7 +8,7 @@ It is measured as a **contrast ratio**, calculated from the relative luminance o
 
 The thresholds in common use come from [[wcag-aa|WCAG]].
 
-Contrast is also a tool for [[visual-hierarchy]]: secondary text is often made lower in contrast than primary text. The accessibility minimum sets the floor on how far that can go.
+Contrast is also a tool for [[visual-hierarchy|visual hierarchy]]: secondary text is often made lower in contrast than primary text. The accessibility minimum sets the floor on how far that can go.
 
 ## Related
 

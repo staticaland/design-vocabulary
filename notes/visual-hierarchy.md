@@ -4,7 +4,7 @@ The order in which elements draw the eye, and so the order of importance a desig
 
 Every screen has a hierarchy whether or not one was designed. The question is whether it matches the real importance of the content. In a good hierarchy a user can tell at a glance what the page is about, what the main action is, and what can be ignored for now.
 
-Hierarchy is built from differences in [[visual-weight]]: size, [[font-weight]], colour, [[contrast]], position, and surrounding space. It needs few levels, clearly separated. Three is often enough: primary, secondary, tertiary.
+Hierarchy is built from differences in [[visual-weight|visual weight]]: size, [[font-weight|font weight]], colour, [[contrast]], position, and surrounding space. It needs few levels, clearly separated. Three is often enough: primary, secondary, tertiary.
 
 ## Related
 
