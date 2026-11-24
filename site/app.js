@@ -1,4 +1,6 @@
 // Note explorer: a list, a note, and a graph of how the notes connect.
+import { mountFigures } from './figures.js';
+
 const SVG = 'http://www.w3.org/2000/svg';
 const TYPE_LABEL = { concept: 'Concept', 'steering-word': 'Steering word', source: 'Source', map: 'Entry point' };
 const GROUPS = [
@@ -320,6 +322,7 @@ function renderNote(note) {
     el('a', { class: 'source-link', href: `${data.repo}/blob/main/notes/${note.id}.md` }, 'View source on GitHub'),
   );
   main.replaceChildren(article);
+  mountFigures(prose);
 
   const ids = [note.id, ...note.neighbours];
   const height = ids.length > 14 ? 620 : ids.length > 6 ? 400 : 260;
