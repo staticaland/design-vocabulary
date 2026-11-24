@@ -6,7 +6,7 @@ Too little, and the lines crowd each other and the eye struggles to stay on one.
 
 The right value depends on two other things:
 
-- **Font size:** large text needs proportionally less. A heading often sits at 1.1 to 1.25, and looks loose at a value that suits body text.
+- **[[font-size|Font size]]:** large text needs proportionally less. A heading often sits at 1.1 to 1.25, and looks loose at a value that suits body text.
 - **[[line-length|Line length]]:** long lines need more, because the eye has further to travel back and needs a clearer path to the start of the next line.
 
 In CSS it is the `line-height` property. A unitless value such as `1.5` is the safe form, since it scales with the font size of whatever element inherits it.

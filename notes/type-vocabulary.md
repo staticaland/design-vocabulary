@@ -31,17 +31,17 @@ In CSS the scaling can be done by hand, with a smaller font size on the code, or
 | Term | What it is | Where it matters |
 | --- | --- | --- |
 | [[baseline\|Baseline]] | The line the letters stand on. Text of different sizes and fonts on one row shares it. | A large number beside a small unit, or a heading beside a small link. |
-| x-height | The height of the small letters, from the baseline to the top of `x`. It decides how big a font looks. | Mixing two fonts in one line, as in the figure above. |
-| Cap height | The height of the capitals, from the baseline to the top of `H`. | What an icon or a badge is centred on when it sits beside a label in capitals. |
-| Ascender | The part of `d`, `b`, and `k` that rises above the x-height, often a little above the capitals. | Tight line heights, where ascenders touch the descenders of the line above. |
-| Descender | The part of `p`, `g`, and `y` that hangs below the baseline. | A label with no descenders can look too high in its button, because the line still keeps room for them. |
-| Overshoot | Round letters such as `o` go slightly past the baseline and the x-height, so that they look as tall as flat ones. | Measure a font on flat letters such as `x` and `z`, not on round ones. |
-| Font size (em) | The size of the box the font is designed in. It is not the height of any letter. | Why two fonts at 16px can look like different sizes. |
+| [[x-height]] | The height of the small letters, from the baseline to the top of `x`. It decides how big a font looks. | Mixing two fonts in one line, as in the figure above. |
+| [[cap-height\|Cap height]] | The height of the capitals, from the baseline to the top of `H`. | What an icon or a badge is centred on when it sits beside a label in capitals. |
+| [[ascender\|Ascender]] | The part of `d`, `b`, and `k` that rises above the x-height, often a little above the capitals. | Tight line heights, where ascenders touch the descenders of the line above. |
+| [[descender\|Descender]] | The part of `p`, `g`, and `y` that hangs below the baseline. | A label with no descenders can look too high in its button, because the line still keeps room for them. |
+| [[overshoot\|Overshoot]] | Round letters such as `o` go slightly past the baseline and the x-height, so that they look as tall as flat ones. | Measure a font on flat letters such as `x` and `z`, not on round ones. |
+| [[font-size\|Font size]] (em) | The size of the box the font is designed in. It is not the height of any letter. | Why two fonts at 16px can look like different sizes. |
 | [[line-height\|Line height]] | The distance from one baseline to the next. Print calls it leading. | Cells in a row need the same line height for their first lines to sit level. |
 | [[font-weight\|Weight]] | How thick the strokes are: light (300), regular (400), medium (500). | A regular-weight word inside light text reads as bold. |
-| Typographic colour | The overall greyness of a block of text. Even colour means nothing stands out by accident. | A heavier or larger font mixed into a paragraph makes a dark spot. The [[squint-test\|squint test]] shows it. |
+| [[typographic-colour\|Typographic colour]] | The overall greyness of a block of text. Even colour means nothing stands out by accident. | A heavier or larger font mixed into a paragraph makes a dark spot. The [[squint-test\|squint test]] shows it. |
 | [[optical-alignment\|Optical alignment]] | Aligning by what the eye sees, not by the numbers. | The numbers can say two baselines match while the eye says one word sits low. |
-| Tabular figures | Digits that all have the same width, so that numbers line up in a column. | Tables of numbers, and counters that would otherwise jitter as they change. In CSS, `font-variant-numeric: tabular-nums`. |
+| [[tabular-figures\|Tabular figures]] | Digits that all have the same width, so that numbers line up in a column. | Tables of numbers, and counters that would otherwise jitter as they change. In CSS, `font-variant-numeric: tabular-nums`. |
 
 ## Related
 
