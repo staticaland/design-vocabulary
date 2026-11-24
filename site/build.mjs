@@ -31,6 +31,7 @@ const plain = (md) =>
   md
     .replace(WIKILINK, (_, target, alias) => alias || target.trim())
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/<\/?[a-z][^>]*>/gi, ' ')
     .replace(/^#+\s+/gm, '')
     .replace(/^\s*[-*]\s+/gm, '')
     .replace(/^\|?[\s:|-]+\|?$/gm, '')
@@ -86,7 +87,7 @@ if (errors.length) {
 
 await rm(outDir, { recursive: true, force: true });
 await mkdir(outDir, { recursive: true });
-for (const f of ['index.html', 'style.css', 'app.js']) {
+for (const f of ['index.html', 'style.css', 'app.js', 'figures.js']) {
   await copyFile(path.join(siteDir, f), path.join(outDir, f));
 }
 await writeFile(path.join(outDir, 'notes.json'), JSON.stringify({ repo: REPO, notes }));

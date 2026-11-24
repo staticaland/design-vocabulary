@@ -9,6 +9,7 @@ The notes use Obsidian's `[[link]]` syntax, so the links do not work when browsi
 ## Where to start
 
 - [polish-ui](notes/polish-ui.md): the vocabulary needed to understand the [polish-ui skill](https://github.com/staticaland/skills/tree/main/plugins/polish-ui)
+- [Type vocabulary](notes/type-vocabulary.md): the lines a font is drawn against, and the words for text that looks misaligned or the wrong size
 - [Sources](notes/sources.md): the books, sites, and tools behind the collection
 - [Steering words](notes/steering-words.md): words for the direction a design should move in, such as bolder, quieter, and distill
 
