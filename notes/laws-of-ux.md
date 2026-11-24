@@ -10,12 +10,12 @@ It describes itself as "a collection of best practices that designers can consid
 
 It is the closest well-known relative of this collection: short, one idea per page, and written to be looked up. The difference is the subject. Laws of UX is mostly about how people perceive and decide. This collection is mostly about the visual details of a screen.
 
-Where the two overlap is grouping. Its Law of Proximity, Law of Common Region, and Law of Similarity are the [[gestalt-principles|Gestalt principles]] covered here under [[proximity]] and [[common-region|common region]].
+Where the two overlap is grouping. Its Law of Proximity, Law of Common Region, and Law of Similarity are the [[gestalt-principles|Gestalt principles]] covered here under [[proximity]], [[common-region|common region]], and [[similarity]].
 
 A caution about the word "law". These are observations and rules of thumb with varying amounts of evidence behind them, not rules that hold every time.
 
 ## Related
 
-- [[gestalt-principles|Gestalt principles]], [[proximity|Proximity]], [[common-region|Common region]]: the overlap
+- [[gestalt-principles|Gestalt principles]], [[proximity|Proximity]], [[common-region|Common region]], [[similarity|Similarity]]: the overlap
 - [[nielsen-norman-group|Nielsen Norman Group]]: longer articles on many of the same principles
 - [[sources|Sources]]

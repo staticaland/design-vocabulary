@@ -8,7 +8,7 @@ A book on typography by Matthew Butterick, published as a website: [practicaltyp
 
 It is written for people who write and lay out documents, not for type designers. It is opinionated, and it gives reasons. The site is free of advertising and is paid for by its readers.
 
-The best starting point is the short chapter "Typography in ten minutes", which argues that a handful of decisions about body text (its size, line spacing, line length, and font) do most of the work. There is also a "Summary of key rules".
+The best starting point is the short chapter "Typography in ten minutes", which argues that a handful of decisions about body text (its size, [[line-height|line spacing]], [[line-length|line length]], and font) do most of the work. There is also a "Summary of key rules".
 
 It goes much deeper on type than these notes do. The notes cover only what a polish review needs: [[typographic-hierarchy|typographic hierarchy]], a [[type-scale|type scale]], [[font-weight|font weight]], and the [[baseline]].
 
