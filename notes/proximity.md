@@ -12,4 +12,5 @@ Proximity is tried first. Only when it is not enough is a stronger tool such as 
 
 - [[gap|Gap]]: the mechanism
 - [[spacing-scale|Spacing scale]]: the values
+- [[white-space|White space]]: what proximity is made of
 - [[common-region|Common region]]: the next tool to reach for
