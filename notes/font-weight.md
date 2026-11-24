@@ -6,7 +6,7 @@ Weights are named (light, regular, medium, semibold, bold) and numbered from 100
 
 Weight is a strong signal for [[typographic-hierarchy|typographic hierarchy]], and it is easy to overspend. Most interfaces need two weights, perhaps three: regular for body, and one or two heavier ones for headings and [[emphasis]]. Adjacent weights such as 500 and 600 are hard to tell apart and should not be asked to carry different meanings.
 
-Not to be confused with [[visual-weight|visual weight]], the general pull of any element. Font weight is one thing that contributes to it.
+Not to be confused with [[visual-weight|visual weight]], the general pull of any element. Font weight is one thing that contributes to it. Across a whole block of text, the result is its [[typographic-colour|typographic colour]].
 
 ## Related
 
