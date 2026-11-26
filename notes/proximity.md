@@ -11,7 +11,7 @@ Proximity is tried first. Only when it is not enough is a stronger tool such as 
 ## Flashcard
 
 <details>
-<summary>What is the classic failure of proximity?</summary>
+<summary>In layout, what spacing mistake throws away grouping by proximity?</summary>
 
 Uniform spacing: everything is the same distance from everything else.
 

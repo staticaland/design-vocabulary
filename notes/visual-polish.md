@@ -9,9 +9,9 @@ Polish is checked on the rendered result, not the code. Code can look tidy and s
 ## Flashcard
 
 <details>
-<summary>Where is visual polish checked?</summary>
+<summary>A UI's code can look tidy and still look wrong. On what is visual polish checked?</summary>
 
-On the rendered result, not in the code.
+The rendered result.
 
 </details>
 

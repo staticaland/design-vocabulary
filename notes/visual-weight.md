@@ -12,7 +12,7 @@ Two rules follow:
 ## Flashcard
 
 <details>
-<summary>What should the heaviest element on a screen be?</summary>
+<summary>What should the element with the most visual weight on a screen be?</summary>
 
 The most important one. Weight should track importance.
 

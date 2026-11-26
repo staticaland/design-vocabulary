@@ -11,7 +11,7 @@ Things with no baseline of their own, such as icons, are aligned to the text by 
 ## Flashcard
 
 <details>
-<summary>A large number sits beside a small unit. How should the two be aligned vertically?</summary>
+<summary>A large price sits beside a small "kr" on one row. On what should the two be aligned?</summary>
 
 On their baselines.
 

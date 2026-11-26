@@ -14,7 +14,7 @@ Breaking similarity on purpose is a form of [[emphasis]]. One item that differs 
 ## Flashcard
 
 <details>
-<summary>What can similarity do that proximity and common region cannot?</summary>
+<summary>Of the Gestalt grouping principles, what can similarity do that proximity and common region cannot?</summary>
 
 Work across distance.
 

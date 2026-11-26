@@ -23,7 +23,7 @@ What "quieter" means depends on the kind of page. On a marketing page it means r
 ## Flashcard
 
 <details>
-<summary>Quieter softens what is there. Which steering word takes things away instead?</summary>
+<summary>In design direction, "quieter" softens what is there. Which word asks for things to be removed instead?</summary>
 
 Distill.
 

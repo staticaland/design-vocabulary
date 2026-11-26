@@ -9,7 +9,7 @@ Nesting usually appears when hierarchy is expressed only by containment. The alt
 ## Flashcard
 
 <details>
-<summary>Nesting usually appears when hierarchy is expressed only by what?</summary>
+<summary>In UI layout, boxes end up nested inside boxes when hierarchy is expressed only by what?</summary>
 
 Containment.
 

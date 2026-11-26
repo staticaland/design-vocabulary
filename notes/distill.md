@@ -23,7 +23,7 @@ Distilling removes obstacles, not capability. It goes wrong when it hides someth
 ## Flashcard
 
 <details>
-<summary>What question does distilling a screen start from?</summary>
+<summary>When reducing a screen to its essentials, what question do you start from?</summary>
 
 What is the one thing this screen is for?
 

@@ -14,7 +14,7 @@ The reverse technique is often better: instead of making the important thing lou
 ## Flashcard
 
 <details>
-<summary>What is the reverse technique to making the important thing louder?</summary>
+<summary>In design, what is the reverse technique to making the important element stand out more?</summary>
 
 De-emphasis: making the unimportant things quieter.
 
