@@ -293,6 +293,7 @@ h1 {
 .type-figure .name { fill: var(--muted); font: 600 12px var(--sans); }
 .type-figure .hint { fill: var(--muted); font: 11px var(--sans); }
 .type-figure .rule { fill: none; stroke: var(--node); stroke-width: 1; }
+.type-figure .shape { fill: var(--surface); stroke: var(--node); stroke-width: 1; }
 .type-figure .rule.dashed { stroke-dasharray: 4 3; }
 .type-figure .rule.baseline { stroke: var(--ink); }
 .type-figure .name.baseline { fill: var(--ink); }

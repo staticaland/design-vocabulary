@@ -165,7 +165,53 @@ function xHeightMatch(host) {
   host.append(key);
 }
 
-const FIGURES = { 'font-lines': fontLines, 'x-height-match': xHeightMatch };
+// A tall panel, a small box, and a short panel in a row: once top-aligned, once on a shared centre line.
+function centreLine(host) {
+  const cases = [
+    { label: 'Top edges on one line', note: 'The tops line up, so the short items hang from the top.', align: 'top' },
+    { label: 'Centres on one line', note: 'Each midpoint sits on the same line, so the row reads as one band.', align: 'centre' },
+  ];
+  for (const c of cases) {
+    const { box, inner, width: W } = panel(host);
+    box.prepend(htmlEl('p', 'figure-label', c.label), htmlEl('p', 'figure-note', c.note));
+
+    const H = 140;
+    const pad = 10;
+    const gap = Math.max(12, W * 0.06);
+    const panelW = Math.min(180, (W - 4 * gap) * 0.36);
+    const smallW = Math.min(64, (W - 4 * gap) * 0.18);
+    const rowW = 2 * panelW + smallW + 2 * gap;
+    const x0 = (W - rowW) / 2;
+    const items = [
+      { x: x0, w: panelW, h: H - 2 * pad },
+      { x: x0 + panelW + gap, w: smallW, h: 32 },
+      { x: x0 + panelW + gap + smallW + gap, w: panelW, h: 64 },
+    ];
+    const lineY = c.align === 'top' ? pad : H / 2;
+    const topOf = (it) => (c.align === 'top' ? pad : H / 2 - it.h / 2);
+
+    const svg = svgEl('svg', {
+      class: 'type-figure',
+      width: W,
+      height: H,
+      viewBox: `0 0 ${W} ${H}`,
+      role: 'img',
+      'aria-label': `A tall panel, a small box, and a short panel in a row. ${c.note}`,
+    });
+    for (const it of items) {
+      svg.append(svgEl('rect', { class: 'shape', x: it.x, y: topOf(it), width: it.w, height: it.h, rx: 6 }));
+    }
+    svg.append(svgEl('line', { class: 'rule x dashed', x1: 0, x2: W, y1: lineY, y2: lineY }));
+    inner.append(svg);
+  }
+  const key = htmlEl('ul', 'figure-key');
+  const li = htmlEl('li');
+  li.append(htmlEl('i', 'x'), 'The shared line');
+  key.append(li);
+  host.append(key);
+}
+
+const FIGURES = { 'font-lines': fontLines, 'x-height-match': xHeightMatch, 'centre-line': centreLine };
 
 // Draws every figure inside root, and again whenever its width changes.
 export function mountFigures(root) {

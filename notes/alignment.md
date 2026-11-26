@@ -10,6 +10,10 @@ Alignment also carries meaning. Things on the same line read as belonging to the
 
 Elements of different sizes can share a centre instead of an edge. In a row of a tall panel, a small box, and a shorter panel, each item's vertical midpoint sits on the same horizontal line, so the row reads as one band even though the tops and bottoms differ. Stacked items can share a vertical centre line the same way.
 
+<figure data-figure="centre-line">
+<figcaption>The same row twice: first with the top edges on one line, then with the vertical midpoints on one line.</figcaption>
+</figure>
+
 Tools name it after the direction things move: "vertical centring", or "Align vertical centers" in Figma, for a row; "Align horizontal centers" for a stack. In CSS, `align-items: center` on a flex row centres the children on the cross axis.
 
 A centre line is less visible than an edge, so it holds up best when the size difference is clear. Shapes that do not fill their box, like an arrow or an icon, may need [[optical-alignment|optical adjustment]] after measured centring.
