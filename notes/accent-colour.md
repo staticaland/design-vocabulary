@@ -21,3 +21,4 @@ It works by scarcity. It stands out only while little else has that colour.
 - [[emphasis|Emphasis]]
 - [[visual-weight|Visual weight]]
 
+- [[accent-bar|Accent bar]]: the accent as a strip along one edge of a box

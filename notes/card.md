@@ -19,5 +19,6 @@ Common region: things inside the same boundary are seen as a group.
 
 - [[common-region|Common region]]
 - [[nesting|Nesting]]: cards inside cards
+- [[accent-bar|Accent bar]]: a coloured strip along one edge of a card
 - [[distill|Distill]]: the steering word for removing cards that add nothing
 
