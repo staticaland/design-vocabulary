@@ -344,6 +344,46 @@ h1 {
 .backlinks a:hover { text-decoration: underline; }
 .backlinks span { display: block; color: var(--muted); }
 
+/* The flashcard: a question to answer from memory. A click on it shows or hides the answer. */
+.flashcard {
+  margin: var(--space-6) 0;
+  border-radius: 10px;
+  background: var(--surface);
+}
+.flashcard summary {
+  display: block;
+  padding: var(--space-5);
+  border-radius: 10px;
+  font: 600 var(--text-lg)/1.35 var(--serif);
+  cursor: pointer;
+}
+.flashcard summary::-webkit-details-marker { display: none; }
+.flashcard summary::before {
+  content: "Flashcard";
+  display: block;
+  margin-bottom: var(--space-2);
+  color: var(--accent);
+  font: 600 var(--text-xs)/1.5 var(--sans);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.flashcard summary::after {
+  content: "Show answer";
+  display: block;
+  width: fit-content;
+  margin-top: var(--space-4);
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--bg);
+  font: 600 var(--text-sm)/1.5 var(--sans);
+}
+.flashcard[open] summary::after { content: "Hide answer"; background: none; color: var(--accent); }
+.flashcard summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.flashcard p { margin: 0; padding: 0 var(--space-5) var(--space-5); }
+.flashcard code { background: var(--bg); }
+
 .source-link {
   display: inline-block;
   margin-top: var(--space-6);

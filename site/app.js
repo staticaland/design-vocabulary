@@ -334,6 +334,12 @@ const rail = $('rail');
 
 function renderNote(note) {
   const prose = el('div', { class: 'prose', html: note.html });
+  // The flashcard carries its own label, so the "Flashcard" heading above it goes.
+  const card = prose.querySelector('details');
+  if (card) {
+    card.className = 'flashcard';
+    card.previousElementSibling.remove();
+  }
   for (const table of prose.querySelectorAll('table')) {
     const wrap = el('div', { class: 'table-wrap' });
     table.replaceWith(wrap);
