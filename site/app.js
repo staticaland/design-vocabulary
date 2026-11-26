@@ -2,13 +2,44 @@
 import { mountFigures } from './figures.js';
 
 const SVG = 'http://www.w3.org/2000/svg';
-const TYPE_LABEL = { concept: 'Concept', 'steering-word': 'Steering word', source: 'Source', map: 'Entry point' };
+const TYPE_LABEL = { concept: 'Concept', 'steering-word': 'Steering word', source: 'Source', map: 'Map' };
+// Each group: the note type, its heading, and the line under that heading on the front page.
 const GROUPS = [
-  ['map', 'Start here'],
-  ['steering-word', 'Steering words'],
-  ['concept', 'Concepts'],
-  ['source', 'Sources'],
+  ['concept', 'Concepts', 'The parts a design is made of, and the words for what is wrong with them.'],
+  ['steering-word', 'Steering words', 'Words for the direction a design should move in.'],
+  ['map', 'Maps', 'Lists that lead from a tool or a topic to the notes behind it.'],
+  ['source', 'Sources', 'Where this vocabulary comes from.'],
 ];
+
+// The concepts the front page leads with, each with a small drawing of the idea.
+// They are the ones the other notes lean on, across hierarchy, grouping, layout, colour and use.
+const ESSENTIALS = [
+  ['visual-hierarchy', '<rect class="a" x="44" y="26" width="152" height="28" rx="3"/><rect class="m" x="44" y="66" width="104" height="14" rx="2"/><rect class="l" x="44" y="92" width="136" height="8" rx="2"/><rect class="l" x="44" y="108" width="96" height="8" rx="2"/>'],
+  ['affordance', '<rect class="s" x="62" y="54" width="116" height="44" rx="8"/><rect class="a" x="62" y="44" width="116" height="44" rx="8"/><path class="p" d="M150 70v36l9-8 6 14 7-3-6-14h12Z"/>'],
+  ['proximity', '<g class="t"><circle cx="58" cy="48" r="7"/><circle cx="80" cy="48" r="7"/><circle cx="58" cy="70" r="7"/><circle cx="80" cy="70" r="7"/><circle cx="58" cy="92" r="7"/><circle cx="80" cy="92" r="7"/><circle cx="160" cy="48" r="7"/><circle cx="182" cy="48" r="7"/><circle cx="160" cy="70" r="7"/><circle cx="182" cy="70" r="7"/><circle cx="160" cy="92" r="7"/><circle cx="182" cy="92" r="7"/></g>'],
+  ['alignment', '<path class="d" d="M64 16v108"/><rect class="m" x="64" y="30" width="112" height="12" rx="2"/><rect class="l" x="64" y="54" width="68" height="12" rx="2"/><rect class="l" x="64" y="78" width="128" height="12" rx="2"/><rect class="l" x="64" y="102" width="48" height="12" rx="2"/>'],
+  ['contrast', '<circle class="s" cx="120" cy="70" r="44"/><path class="k" d="M120 26a44 44 0 0 0 0 88Z"/><circle class="o" cx="120" cy="70" r="44"/>'],
+  ['white-space', '<rect class="o" x="40" y="18" width="160" height="104" rx="4"/><rect class="k" x="94" y="58" width="52" height="10" rx="2"/><rect class="l" x="102" y="76" width="36" height="6" rx="2"/>'],
+];
+
+// The concepts on the front page, sorted into topics. A concept that is not listed goes under "Other".
+const TOPICS = [
+  ['Hierarchy and emphasis', ['visual-hierarchy', 'visual-weight', 'emphasis', 'squint-test', 'accent-bar']],
+  ['Grouping', ['gestalt-principles', 'proximity', 'similarity', 'common-region', 'card', 'nesting']],
+  ['Layout and alignment', ['alignment', 'alignment-axis', 'grid', 'optical-alignment', 'ragged-edge', 'overflow', 'truncation']],
+  ['Spacing', ['white-space', 'padding', 'gap', 'spacing-scale']],
+  ['Colour', ['colour-palette', 'accent-colour', 'contrast', 'wcag-aa']],
+  ['Type', ['typographic-hierarchy', 'type-scale', 'font-size', 'font-weight', 'line-height', 'line-length', 'typographic-colour', 'tabular-figures', 'baseline', 'x-height', 'cap-height', 'ascender', 'descender', 'overshoot']],
+  ['Practice', ['affordance', 'visual-polish', 'steering-words', 'design-tokens']],
+];
+
+// A small mark for each type of note, drawn beside its title on the front page.
+const MARKS = {
+  concept: '<circle cx="10" cy="10" r="8"/><path d="M10 3.5 16.5 10 10 16.5 3.5 10Z"/>',
+  'steering-word': '<circle cx="10" cy="10" r="8"/><path d="m13.5 6.5-2 5-5 2 2-5Z"/>',
+  map: '<path d="m3 5 4.5-1.5 5 1.5L17 3.5V15l-4.5 1.5-5-1.5L3 16.5ZM7.5 3.5V15m5-10v11.5"/>',
+  source: '<path d="M10 5.5C8 4 5 3.8 2.5 4.5v10.5C5 14.3 8 14.5 10 16c2-1.5 5-1.7 7.5-1V4.5C15 3.8 12 4 10 5.5Zm0 0V16"/>',
+};
 
 const $ = (id) => document.getElementById(id);
 const el = (tag, attrs = {}, ...children) => {
@@ -183,8 +214,10 @@ function layout(ids, links, width, height, pad) {
         }
       }
     }
-    for (const p of pos.values()) {
-      p.x = Math.min(width - pad.x, Math.max(pad.x, p.x));
+    for (const [id, p] of pos) {
+      // A long label needs more room than the padding, or it runs off the side.
+      const edge = Math.max(pad.x, labelText(id).length * 3.3 + 4);
+      p.x = Math.min(width - edge, Math.max(edge, p.x));
       p.y = Math.min(height - pad.bottom, Math.max(pad.top, p.y));
     }
     if (!moved) break;
@@ -330,7 +363,27 @@ toggle.addEventListener('click', () => setMenu(!nav.classList.contains('open')))
 /* ---------- Views ---------- */
 
 const main = $('main');
-const rail = $('rail');
+
+// The graph of connected notes is closed until asked for, so that the page reads calmly.
+// The choice is remembered for the next page.
+function connectionsSection(ids, graph, count) {
+  const section = el(
+    'details',
+    { class: 'connections' },
+    el('summary', {}, el('span', { class: 'section-label' }, 'Connections'), el('span', { class: 'count' }, count)),
+    drawGraph(ids, graph),
+    legend(),
+  );
+  try {
+    section.open = localStorage.getItem('connections') === 'open';
+  } catch {}
+  section.addEventListener('toggle', () => {
+    try {
+      localStorage.setItem('connections', section.open ? 'open' : 'closed');
+    } catch {}
+  });
+  return section;
+}
 
 function renderNote(note) {
   const prose = el('div', { class: 'prose', html: note.html });
@@ -345,11 +398,13 @@ function renderNote(note) {
     table.replaceWith(wrap);
     wrap.append(table);
   }
+  // The definition, the first paragraph, goes into the head with the title.
+  const definition = prose.querySelector(':scope > p:first-child');
+  if (definition) definition.className = 'definition';
   const article = el(
     'article',
     { class: 'note' },
-    el('p', { class: `eyebrow ${note.type}` }, TYPE_LABEL[note.type] || note.type),
-    el('h1', {}, note.title),
+    el('header', { class: 'head' }, el('p', { class: `eyebrow ${note.type}` }, TYPE_LABEL[note.type] || note.type), el('h1', {}, note.title)),
     prose,
   );
 
@@ -370,50 +425,107 @@ function renderNote(note) {
       ),
     );
   }
+  const ids = [note.id, ...note.neighbours];
+  const height = ids.length > 14 ? 560 : ids.length > 6 ? 420 : 300;
+  const connections = connectionsSection(
+    ids,
+    { width: 700, height, current: note.id, label: `Notes connected to ${note.title}` },
+    `${note.neighbours.length} ${note.neighbours.length === 1 ? 'note' : 'notes'}`,
+  );
   article.append(
+    connections,
     el('a', { class: 'source-link', href: `${data.repo}/blob/main/notes/${note.id}.md` }, 'View source on GitHub'),
   );
+  if (definition) article.querySelector('.head').append(definition);
   main.replaceChildren(article);
   mountFigures(prose);
   mountPrompts(prose);
-
-  const ids = [note.id, ...note.neighbours];
-  const height = ids.length > 14 ? 620 : ids.length > 6 ? 400 : 260;
-  rail.replaceChildren(
-    el('h2', { class: 'section-label' }, 'Connections'),
-    drawGraph(ids, { width: 300, height, current: note.id, label: `Notes connected to ${note.title}` }),
-    el('p', { class: 'count' }, `${note.neighbours.length} connected ${note.neighbours.length === 1 ? 'note' : 'notes'}`),
-    legend(),
-  );
   document.title = `${note.title} · Design vocabulary`;
 }
 
 function renderHome() {
-  const maps = notes.filter((n) => n.type === 'map').sort(byTitle);
+  const title = (n) => n.title.replace(' (source map)', '');
+  // Each note is a line in a list: a mark, the title, and the definition.
+  const item = (n) =>
+    el(
+      'li',
+      {},
+      el('span', { html: `<svg viewBox="0 0 20 20" aria-hidden="true">${MARKS[n.type] || MARKS.concept}</svg>` }),
+      el('a', { href: `#/${n.id}` }, title(n)),
+      // The heading above the maps already says what a map is.
+      el('span', { class: 'summary' }, n.summary.replace(/^An entry point, not a concept\. /, '')),
+    );
+  // The essentials are cards: a drawing, the title, and the definition.
+  const card = ([id, art]) => {
+    const n = byId.get(id);
+    return el(
+      'li',
+      {},
+      el('span', { html: `<svg class="art" viewBox="0 0 240 140" aria-hidden="true">${art}</svg>` }),
+      el('a', { href: `#/${n.id}` }, title(n)),
+      el('span', { class: 'summary' }, n.summary),
+    );
+  };
+  const essentials = el(
+    'section',
+    { class: 'group' },
+    el('h2', {}, 'Essentials'),
+    el('p', { class: 'about' }, 'Six ideas that most of the other notes lean on.'),
+    el('ul', { class: 'cards' }, ...ESSENTIALS.filter(([id]) => byId.has(id)).map(card)),
+  );
+  // The concepts are too many to list with their definitions. They are an index instead:
+  // titles under topic headings, with the definition shown on hover.
+  const index = (concepts) => {
+    const placed = new Set(TOPICS.flatMap(([, ids]) => ids));
+    const other = concepts.filter((n) => !placed.has(n.id)).map((n) => n.id);
+    return el(
+      'div',
+      { class: 'topics' },
+      ...[...TOPICS, ['Other', other]]
+        .map(([name, ids]) => [name, ids.map((id) => byId.get(id)).filter((n) => n && n.type === 'concept')])
+        .filter(([, list]) => list.length)
+        .map(([name, list]) =>
+          el(
+            'section',
+            { class: 'topic' },
+            el('h3', {}, name),
+            el('ul', {}, ...list.map((n) => el('li', {}, el('a', { href: `#/${n.id}`, 'data-note': n.id }, title(n))))),
+          ),
+        ),
+    );
+  };
+  const groups = GROUPS.map(([type, label, about]) => {
+    const items = notes.filter((n) => n.type === type).sort(byTitle);
+    return el(
+      'section',
+      { class: `group ${type}${type === 'concept' ? '' : ' short'}` },
+      el('h2', {}, label),
+      el('p', { class: 'about' }, about),
+      type === 'concept' ? index(items) : el('ul', { class: 'items' }, ...items.map(item)),
+    );
+  });
   main.replaceChildren(
     el(
       'div',
       { class: 'home' },
-      el('h1', {}, 'Design vocabulary'),
       el(
-        'p',
-        { class: 'lede' },
-        `${notes.length} short notes on the words designers use, one concept per note, linked to each other.`,
-      ),
-      el('p', { class: 'hint' }, 'Every dot is a note. Pick one to start reading, or search the list.'),
-      drawGraph(notes.map((n) => n.id), { width: 860, height: 620, label: 'All notes and their links' }),
-      legend(),
-      el('h2', { class: 'section-label' }, 'Start here'),
-      el(
-        'ul',
-        { class: 'starts' },
-        ...maps.map((n) =>
-          el('li', {}, el('a', { href: `#/${n.id}` }, n.title.replace(' (source map)', '')), el('span', {}, n.summary)),
+        'header',
+        { class: 'head' },
+        el('h1', {}, 'Design vocabulary'),
+        el(
+          'p',
+          { class: 'lede' },
+          `${notes.length} short notes on the words designers use, one concept per note, linked to each other.`,
         ),
+      ),
+      el('div', { class: 'groups' }, essentials, ...groups),
+      connectionsSection(
+        notes.map((n) => n.id),
+        { width: 1040, height: 700, label: 'All notes and their links' },
+        `${notes.length} notes`,
       ),
     ),
   );
-  rail.replaceChildren();
   document.title = 'Design vocabulary';
 }
 
@@ -426,7 +538,6 @@ function renderMissing(id) {
       el('div', { class: 'prose' }, el('p', {}, `There is no note called "${id}". `, el('a', { href: '#/' }, 'See all notes'), '.')),
     ),
   );
-  rail.replaceChildren();
   document.title = 'Note not found · Design vocabulary';
 }
 
@@ -449,7 +560,7 @@ function hidePreview() {
   preview.hidden = true;
 }
 document.addEventListener('mouseover', (e) => {
-  const link = e.target.closest?.('.prose a[data-note], .backlinks a[data-note], .graph a[data-note]');
+  const link = e.target.closest?.('.prose a[data-note], .backlinks a[data-note], .graph a[data-note], .topics a[data-note]');
   if (!link) return;
   const note = byId.get(link.dataset.note);
   if (!note || note.id === currentId) return;
@@ -460,6 +571,12 @@ document.addEventListener('mouseover', (e) => {
   const left = Math.max(8, Math.min(box.left + scrollX, scrollX + innerWidth - width - 8));
   let top = box.bottom + scrollY + 8;
   if (box.bottom + preview.offsetHeight + 16 > innerHeight) top = box.top + scrollY - preview.offsetHeight - 8;
+  // In the index the preview goes beside the title, so that it does not cover the titles below.
+  if (link.closest('.topics') && box.right + 16 + width + 8 < innerWidth) {
+    preview.style.left = `${box.right + scrollX + 16}px`;
+    preview.style.top = `${box.top + scrollY - 12}px`;
+    return;
+  }
   preview.style.left = `${left}px`;
   preview.style.top = `${top}px`;
 });

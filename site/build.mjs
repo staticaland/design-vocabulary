@@ -93,6 +93,17 @@ await mkdir(outDir, { recursive: true });
 for (const f of ['index.html', 'style.css', 'app.js', 'figures.js']) {
   await copyFile(path.join(siteDir, f), path.join(outDir, f));
 }
+// The fonts are served from the site itself, so a visit makes no third-party request.
+const FONTS = [
+  '@fontsource-variable/newsreader/files/newsreader-latin-opsz-normal.woff2',
+  '@fontsource-variable/newsreader/files/newsreader-latin-opsz-italic.woff2',
+  '@fontsource/lato/files/lato-latin-400-normal.woff2',
+  '@fontsource/lato/files/lato-latin-700-normal.woff2',
+];
+await mkdir(path.join(outDir, 'fonts'));
+for (const f of FONTS) {
+  await copyFile(path.join(root, 'node_modules', f), path.join(outDir, 'fonts', path.basename(f)));
+}
 await writeFile(path.join(outDir, 'notes.json'), JSON.stringify({ repo: REPO, notes }));
 await writeFile(path.join(outDir, '.nojekyll'), '');
 console.log(`Built ${notes.length} notes into dist/`);
