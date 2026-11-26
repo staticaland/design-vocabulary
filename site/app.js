@@ -22,6 +22,52 @@ const el = (tag, attrs = {}, ...children) => {
   return node;
 };
 
+// A blockquote in a note is a prompt to copy. A first line that is only bold text becomes its label.
+const COPY_ICON =
+  '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.5v-.5a1.5 1.5 0 0 0-1.5-1.5H4a1.5 1.5 0 0 0-1.5 1.5v5A1.5 1.5 0 0 0 4 9.5h.5"/></svg>';
+const DONE_ICON = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg>';
+
+function mountPrompts(root) {
+  for (const box of root.querySelectorAll('blockquote')) {
+    const first = box.firstElementChild;
+    let label = 'Prompt';
+    if (first?.matches('p') && first.childElementCount === 1 && first.firstElementChild.matches('strong') && first.textContent.trim() === first.firstElementChild.textContent.trim()) {
+      label = first.textContent.trim();
+      first.remove();
+    }
+    const text = [...box.children].map((p) => p.textContent.trim()).join('\n\n');
+    const status = el('span', { class: 'prompt-status', html: COPY_ICON });
+    box.prepend(el('div', { class: 'prompt-head' }, el('span', { class: 'prompt-label' }, label), status));
+    box.classList.add('prompt');
+    box.tabIndex = 0;
+    box.setAttribute('role', 'button');
+    box.setAttribute('aria-label', `Copy prompt: ${label}`);
+
+    let timer;
+    const copy = async () => {
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        return;
+      }
+      status.innerHTML = `${DONE_ICON}<span>Copied</span>`;
+      box.classList.add('copied');
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        status.innerHTML = COPY_ICON;
+        box.classList.remove('copied');
+      }, 1500);
+    };
+    box.addEventListener('click', copy);
+    box.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        copy();
+      }
+    });
+  }
+}
+
 const data = await (await fetch('notes.json')).json();
 const notes = data.notes;
 const byId = new Map(notes.map((n) => [n.id, n]));
@@ -323,6 +369,7 @@ function renderNote(note) {
   );
   main.replaceChildren(article);
   mountFigures(prose);
+  mountPrompts(prose);
 
   const ids = [note.id, ...note.neighbours];
   const height = ids.length > 14 ? 620 : ids.length > 6 ? 400 : 260;

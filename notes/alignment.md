@@ -16,6 +16,14 @@ Elements of different sizes can share a centre instead of an edge. In a row of a
 
 Tools name it after the direction things move: "vertical centring", or "Align vertical centers" in Figma, for a row; "Align horizontal centers" for a stack. In CSS, `align-items: center` on a flex row centres the children on the cross axis.
 
+> **Centre**
+>
+> Centre-align the items in this row: put the vertical midpoint of each item on the vertical midpoint of the tallest one, so they share one horizontal centre line.
+
+> **Top**
+>
+> Top-align the items in this row: put the top edge of each item level with the top of the tallest one, and let the shorter ones end higher.
+
 A centre line is less visible than an edge, so it holds up best when the size difference is clear. Shapes that do not fill their box, like an arrow or an icon, may need [[optical-alignment|optical adjustment]] after measured centring.
 
 ## Related
