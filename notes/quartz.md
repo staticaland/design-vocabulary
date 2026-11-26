@@ -12,8 +12,18 @@ Its features are close to a list of what a notes site needs: a graph view, backl
 
 This collection's site is hand-built and does a subset of the same things. That keeps it small and fully under control, at the cost of maintaining the code. Because the notes already use Obsidian's syntax, moving to Quartz later would not mean rewriting them.
 
+## Flashcard
+
+<details>
+<summary>What does Quartz turn a folder of Markdown notes into?</summary>
+
+A website.
+
+</details>
+
 ## Related
 
 - [[obsidian-publish|Obsidian Publish]]: the paid, hosted alternative
 - [[maggie-appleton-garden|Maggie Appleton's digital garden]]: what such sites are for
 - [[sources|Sources]]
+

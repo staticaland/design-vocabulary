@@ -14,9 +14,19 @@ Uneven colour on purpose is [[emphasis]]. The point is that it should be chosen.
 
 The [[squint-test|squint test]] is the way to see it: with the words blurred, only the texture is left.
 
+## Flashcard
+
+<details>
+<summary>What typographic colour should running text have?</summary>
+
+Even colour: one flat grey.
+
+</details>
+
 ## Related
 
 - [[visual-weight|Visual weight]]: the same idea for any element, not only text
 - [[font-weight|Font weight]], [[line-height|Line height]]: the main controls
 - [[squint-test|Squint test]]
 - [[emphasis|Emphasis]]
+

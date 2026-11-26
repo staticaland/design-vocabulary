@@ -8,8 +8,18 @@ Weight is a strong signal for [[typographic-hierarchy|typographic hierarchy]], a
 
 Not to be confused with [[visual-weight|visual weight]], the general pull of any element. Font weight is one thing that contributes to it. Across a whole block of text, the result is its [[typographic-colour|typographic colour]].
 
+## Flashcard
+
+<details>
+<summary>Which number is the regular font weight in CSS?</summary>
+
+400.
+
+</details>
+
 ## Related
 
 - [[typographic-hierarchy|Typographic hierarchy]]
 - [[type-scale|Type scale]]
 - [[visual-weight|Visual weight]]
+

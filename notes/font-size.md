@@ -10,9 +10,19 @@ The CSS units follow from this. `1em` is the font size of the current element, a
 
 Font size also does not set the distance between lines. That is [[line-height|line height]].
 
+## Flashcard
+
+<details>
+<summary>What does font size measure?</summary>
+
+The height of the em, the box the font is designed in.
+
+</details>
+
 ## Related
 
 - [[x-height]]: what decides how big a font looks
 - [[type-scale|Type scale]]: choosing a set of font sizes
 - [[line-height|Line height]]
 - [[type-vocabulary|Type vocabulary]]: a figure that compares two fonts at one size
+

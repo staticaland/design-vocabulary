@@ -10,7 +10,17 @@ There are three clean ways to handle it:
 - **Scroll:** keep the container's size and let the content scroll inside it.
 - **Truncate:** cut the content short. See [[truncation]].
 
+## Flashcard
+
+<details>
+<summary>Why do designs made with placeholder text miss overflow?</summary>
+
+Overflow tends to appear only with real data, such as a long name or a translated string.
+
+</details>
+
 ## Related
 
 - [[truncation|Truncation]]
 - [[padding|Padding]]: overflowing content often eats the padding first
+

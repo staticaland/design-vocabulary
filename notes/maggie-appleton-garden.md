@@ -14,8 +14,18 @@ This collection follows the first two patterns: it is arranged by links instead 
 
 Unlike the other sources on format, much of her writing is about design.
 
+## Flashcard
+
+<details>
+<summary>What is a collection of notes called when it is linked by topic, published unfinished, and improved over time?</summary>
+
+A digital garden.
+
+</details>
+
 ## Related
 
 - [[andy-matuschak-notes|Andy Matuschak's notes]]: the source of the term "evergreen notes"
 - [[quartz|Quartz]]: a common tool for building a garden
 - [[sources|Sources]]
+

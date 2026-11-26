@@ -10,8 +10,18 @@ It is one of three kinds of space in the CSS box model, and the difference matte
 - **Margin:** outside the element's border, pushing other elements away.
 - **[[gap|Gap]]:** between the children of a container, owned by the parent.
 
+## Flashcard
+
+<details>
+<summary>What separates padding from margin?</summary>
+
+The element's border. Padding is inside it and margin is outside it.
+
+</details>
+
 ## Related
 
 - [[gap|Gap]]
 - [[spacing-scale|Spacing scale]]: where padding values should come from
 - [[common-region|Common region]]: a region needs padding to read as a region
+

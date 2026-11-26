@@ -14,8 +14,18 @@ This collection borrows the outline of the method: one concept per note, a flat 
 
 His subject is learning and tools for thought, not design, so this is a source for the format of the collection and not for its content.
 
+## Flashcard
+
+<details>
+<summary>What does Andy Matuschak call notes that are written to develop and stay useful over time?</summary>
+
+Evergreen notes.
+
+</details>
+
 ## Related
 
 - [[maggie-appleton-garden|Maggie Appleton's digital garden]]: the wider movement and its history
 - [[quartz|Quartz]], [[obsidian-publish|Obsidian Publish]]: tools for publishing notes this way
 - [[sources|Sources]]
+

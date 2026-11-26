@@ -21,3 +21,12 @@ Each check in the skill, and the notes behind it:
 - **Emphasis:** [[emphasis|Emphasis]]
 - **Colour:** [[colour-palette|Colour palette]], [[accent-colour|Accent colour]], [[design-tokens|Design tokens]], [[contrast|Contrast]], [[wcag-aa|WCAG AA]]
 - **Squint test:** [[squint-test|Squint test]]
+
+## Flashcard
+
+<details>
+<summary>Which check in the polish-ui skill looks at the screen with the detail blurred away?</summary>
+
+The squint test.
+
+</details>

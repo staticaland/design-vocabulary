@@ -8,8 +8,18 @@ Fewer axes means a calmer layout. An element that shares its axis with nothing e
 
 To **anchor** an element is to give it that reason by putting it on an edge something else already uses.
 
+## Flashcard
+
+<details>
+<summary>What is an element said to do when it shares its alignment axis with nothing else?</summary>
+
+Float.
+
+</details>
+
 ## Related
 
 - [[alignment|Alignment]]
 - [[grid|Grid]]: a way to decide the axes in advance
 - [[padding|Padding]]: a common cause of accidental extra axes, when nested containers each add their own inset
+

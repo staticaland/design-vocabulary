@@ -26,9 +26,19 @@ Tools name it after the direction things move: "vertical centring", or "Align ve
 
 A centre line is less visible than an edge, so it holds up best when the size difference is clear. Shapes that do not fill their box, like an arrow or an icon, may need [[optical-alignment|optical adjustment]] after measured centring.
 
+## Flashcard
+
+<details>
+<summary>Why do two elements that almost line up look worse than two that clearly do not?</summary>
+
+A near miss looks like a mistake. A clear difference looks like a choice.
+
+</details>
+
 ## Related
 
 - [[alignment-axis|Alignment axis]]: the invisible line itself
 - [[grid|Grid]]: a system of predefined lines to align to
 - [[ragged-edge|Ragged edge]]: what a failed edge looks like
 - [[optical-alignment|Optical alignment]]: when aligned by the numbers is not aligned to the eye
+

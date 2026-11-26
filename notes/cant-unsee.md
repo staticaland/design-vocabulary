@@ -12,9 +12,19 @@ It is useful because [[visual-polish|visual polish]] is first a matter of seeing
 
 The game gives the practice but not the words. The notes here go the other way, so the two work well together.
 
+## Flashcard
+
+<details>
+<summary>What does the player do in each round of Can't Unsee?</summary>
+
+Pick the more correct of two nearly identical versions of a piece of UI.
+
+</details>
+
 ## Related
 
 - [[visual-polish|Visual polish]]
 - [[alignment|Alignment]], [[optical-alignment|Optical alignment]], [[spacing-scale|Spacing scale]]: what many of the rounds test
 - [[squint-test|Squint test]]: another way of training the eye
 - [[sources|Sources]]
+

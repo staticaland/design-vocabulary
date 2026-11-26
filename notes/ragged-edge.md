@@ -6,7 +6,17 @@ The term comes from typography. Left-aligned text is "ragged right": the lines e
 
 In UI polish the word describes the unwanted kind: a column of labels, cards, or buttons whose edges were meant to line up and do not. Common causes are items sized by their content (so each has a different width), inconsistent [[padding]], or mixed alignment within one list.
 
+## Flashcard
+
+<details>
+<summary>What does "ragged right" describe?</summary>
+
+Left-aligned text, where the lines end wherever the words run out.
+
+</details>
+
 ## Related
 
 - [[alignment|Alignment]]
 - [[alignment-axis|Alignment axis]]
+

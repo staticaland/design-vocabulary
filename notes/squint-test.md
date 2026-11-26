@@ -11,8 +11,18 @@ Two things should survive:
 
 It can be done by squinting, stepping back from the screen, or applying a blur filter to a screenshot.
 
+## Flashcard
+
+<details>
+<summary>In the squint test, what does it mean when the page blurs into one even texture?</summary>
+
+The grouping is too weak.
+
+</details>
+
 ## Related
 
 - [[visual-hierarchy|Visual hierarchy]]
 - [[visual-weight|Visual weight]]
 - [[proximity|Proximity]], [[common-region|Common region]]
+

@@ -13,8 +13,18 @@ Standard examples:
 
 The method is to start from the mathematical position and then adjust by eye, usually by a pixel or two.
 
+## Flashcard
+
+<details>
+<summary>Why does a play triangle centred by its box look off-centre?</summary>
+
+Most of its mass is on the left, so it looks too far left.
+
+</details>
+
 ## Related
 
 - [[alignment|Alignment]]
 - [[baseline|Baseline]]
 - [[visual-weight|Visual weight]]: the "mass" being balanced
+

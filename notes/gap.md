@@ -8,8 +8,18 @@ Gaps do the work of [[proximity]]: a small gap says "these belong together", a l
 
 Setting spacing with `gap` on the parent, rather than margins on each child, keeps spacing decisions in one place.
 
+## Flashcard
+
+<details>
+<summary>Where does the CSS <code>gap</code> property put space?</summary>
+
+Between the children of a flex or grid container, with none before the first or after the last.
+
+</details>
+
 ## Related
 
 - [[padding|Padding]]
 - [[spacing-scale|Spacing scale]]
 - [[proximity|Proximity]]
+

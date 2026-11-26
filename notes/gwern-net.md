@@ -12,8 +12,18 @@ It is here for its interface. Hovering over a link opens a popup with the linked
 
 The hover previews on this collection's site are the same idea in a much simpler form.
 
+## Flashcard
+
+<details>
+<summary>Which interface feature is Gwern.net known for?</summary>
+
+Link previews: hovering over a link opens a popup with the linked page or an excerpt from it.
+
+</details>
+
 ## Related
 
 - [[andy-matuschak-notes|Andy Matuschak's notes]]: a different way of keeping the current note in view
 - [[obsidian-publish|Obsidian Publish]], [[quartz|Quartz]]: tools that offer hover previews ready-made
 - [[sources|Sources]]
+

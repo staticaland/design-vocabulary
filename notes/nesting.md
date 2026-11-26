@@ -6,9 +6,19 @@ One level of nesting is ordinary (a [[card]] on a page). The trouble starts at t
 
 Nesting usually appears when hierarchy is expressed only by containment. The alternatives are to group by [[proximity]], separate with a heading or a divider line, or drop the outer container.
 
+## Flashcard
+
+<details>
+<summary>Nesting usually appears when hierarchy is expressed only by what?</summary>
+
+Containment.
+
+</details>
+
 ## Related
 
 - [[common-region|Common region]]
 - [[card|Card]]
 - [[visual-weight|Visual weight]]
 - [[distill|Distill]]: the steering word for removing containers that add nothing
+

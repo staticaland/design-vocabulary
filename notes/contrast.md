@@ -10,8 +10,18 @@ The thresholds in common use come from [[wcag-aa|WCAG]].
 
 Contrast is also a tool for [[visual-hierarchy|visual hierarchy]]: secondary text is often made lower in contrast than primary text. The accessibility minimum sets the floor on how far that can go.
 
+## Flashcard
+
+<details>
+<summary>What contrast ratio does black text on white have?</summary>
+
+21:1, the highest possible.
+
+</details>
+
 ## Related
 
 - [[wcag-aa|WCAG AA]]
 - [[visual-weight|Visual weight]]
 - [[colour-palette|Colour palette]]
+

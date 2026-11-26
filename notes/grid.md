@@ -9,8 +9,18 @@ Two kinds matter for UI work:
 
 **Off-grid** means an element sits at a position or size the system does not produce: 13px where everything else is 12 or 16. Off-grid values are usually accidents, such as a one-off tweak or a border that added an unaccounted pixel.
 
+## Flashcard
+
+<details>
+<summary>What does "off-grid" mean?</summary>
+
+An element sits at a position or size the system does not produce, such as 13px where everything else is 12 or 16.
+
+</details>
+
 ## Related
 
 - [[alignment|Alignment]]
 - [[alignment-axis|Alignment axis]]
 - [[spacing-scale|Spacing scale]]
+

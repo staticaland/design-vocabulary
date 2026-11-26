@@ -11,7 +11,17 @@ Tabular figures fix this by giving every digit the same width. Where they are ne
 
 In CSS they are turned on with `font-variant-numeric: tabular-nums`. The font has to include them. Many interface fonts do, and all monospaced fonts have them by nature.
 
+## Flashcard
+
+<details>
+<summary>Which CSS declaration turns on tabular figures?</summary>
+
+`font-variant-numeric: tabular-nums`
+
+</details>
+
 ## Related
 
 - [[alignment|Alignment]], [[alignment-axis|Alignment axis]]
 - [[type-vocabulary|Type vocabulary]]
+

@@ -13,3 +13,12 @@ Impeccable's vocabulary is mostly [[steering-words|steering words]]: words for t
 - `distill`: [[distill|Distill]]
 
 Only these three are covered so far.
+
+## Flashcard
+
+<details>
+<summary>What kind of vocabulary does Impeccable mostly use to direct a coding agent?</summary>
+
+Steering words.
+
+</details>

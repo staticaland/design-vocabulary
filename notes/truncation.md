@@ -8,6 +8,16 @@ Truncating "cleanly" means the cut is deliberate: an ellipsis rather than text s
 
 Variants: single-line truncation, multi-line truncation (line clamping), and middle truncation, which keeps both ends of a string (`report-fin…2026.pdf`).
 
+## Flashcard
+
+<details>
+<summary>What is middle truncation?</summary>
+
+Cutting from the middle of a string so that both ends stay, as in `report-fin…2026.pdf`.
+
+</details>
+
 ## Related
 
 - [[overflow|Overflow]]
+

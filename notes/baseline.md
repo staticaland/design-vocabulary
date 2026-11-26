@@ -8,7 +8,17 @@ It matters when text of different sizes shares a row, such as a large number bes
 
 Things with no baseline of their own, such as icons, are aligned to the text by eye. See [[optical-alignment|optical alignment]].
 
+## Flashcard
+
+<details>
+<summary>A large number sits beside a small unit. How should the two be aligned vertically?</summary>
+
+On their baselines.
+
+</details>
+
 ## Related
 
 - [[alignment|Alignment]]
 - [[optical-alignment|Optical alignment]]
+

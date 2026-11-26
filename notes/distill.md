@@ -20,6 +20,15 @@ Common moves:
 
 Distilling removes obstacles, not capability. It goes wrong when it hides something users need in order to decide, removes labels until the interface becomes a puzzle, or makes a complex task look simpler than it is.
 
+## Flashcard
+
+<details>
+<summary>What question does distilling a screen start from?</summary>
+
+What is the one thing this screen is for?
+
+</details>
+
 ## Related
 
 - [[quieter|Quieter]], [[bolder|Bolder]]: the other [[steering-words|steering words]]
@@ -30,3 +39,4 @@ Distilling removes obstacles, not capability. It goes wrong when it hides someth
 ## Source
 
 The word is used here as in the `distill` command of [[impeccable|Impeccable]].
+

@@ -8,9 +8,19 @@ Cap height matters most when something has to be centred against text. The box a
 
 It is also the height to match when a logo or a badge sits in a line of capitals.
 
+## Flashcard
+
+<details>
+<summary>Between which two points is cap height measured?</summary>
+
+From the baseline to the top of a flat capital such as `H`.
+
+</details>
+
 ## Related
 
 - [[x-height]]: the same measurement for small letters
 - [[ascender|Ascender]]
 - [[optical-alignment|Optical alignment]]
 - [[type-vocabulary|Type vocabulary]]: a figure that shows the line
+

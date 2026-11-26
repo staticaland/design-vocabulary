@@ -20,6 +20,15 @@ Quiet is not the same as generic. The failure is grey text on white, one weight 
 
 What "quieter" means depends on the kind of page. On a marketing page it means restraint, with the character kept. In a tool that people work in all day it means the interface getting out of the way of the task.
 
+## Flashcard
+
+<details>
+<summary>Quieter softens what is there. Which steering word takes things away instead?</summary>
+
+Distill.
+
+</details>
+
 ## Related
 
 - [[bolder|Bolder]]: the opposite direction
@@ -30,3 +39,4 @@ What "quieter" means depends on the kind of page. On a marketing page it means r
 ## Source
 
 The word is used here as in the `quieter` command of [[impeccable|Impeccable]].
+

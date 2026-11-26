@@ -43,8 +43,18 @@ In CSS the scaling can be done by hand, with a smaller font size on the code, or
 | [[optical-alignment\|Optical alignment]] | Aligning by what the eye sees, not by the numbers. | The numbers can say two baselines match while the eye says one word sits low. |
 | [[tabular-figures\|Tabular figures]] | Digits that all have the same width, so that numbers line up in a column. | Tables of numbers, and counters that would otherwise jitter as they change. In CSS, `font-variant-numeric: tabular-nums`. |
 
+## Flashcard
+
+<details>
+<summary>Code inside a sentence looks a size too large. What should be matched between the two fonts?</summary>
+
+Their x-heights, not their font sizes.
+
+</details>
+
 ## Related
 
 - [[typographic-hierarchy|Typographic hierarchy]], [[type-scale|Type scale]]: choosing sizes and weights, where this note is about measuring them
 - [[line-length|Line length]]: the other measurement of a block of text
 - [[practical-typography|Practical Typography]]: where to read more
+

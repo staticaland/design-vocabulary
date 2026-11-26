@@ -11,9 +11,19 @@ Two disciplines keep it working:
 
 The reverse technique is often better: instead of making the important thing louder, make the unimportant things quieter (de-emphasis).
 
+## Flashcard
+
+<details>
+<summary>What is the reverse technique to making the important thing louder?</summary>
+
+De-emphasis: making the unimportant things quieter.
+
+</details>
+
 ## Related
 
 - [[visual-weight|Visual weight]]
 - [[visual-hierarchy|Visual hierarchy]]
 - [[accent-colour|Accent colour]]: emphasis by colour
 - [[bolder|Bolder]], [[quieter|Quieter]]: [[steering-words|steering words]] for turning emphasis up or down across a whole design
+

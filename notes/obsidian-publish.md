@@ -12,8 +12,18 @@ It offers a graph view, backlinks, hover previews, and "stacked pages", where a 
 
 The notes in this collection can be opened as a vault in Obsidian itself, which is free, without using Publish.
 
+## Flashcard
+
+<details>
+<summary>What does a link do in the "stacked pages" view of Obsidian Publish?</summary>
+
+It opens the linked note in a pane beside the current one.
+
+</details>
+
 ## Related
 
 - [[quartz|Quartz]]: the free, self-hosted alternative
 - [[gwern-net|Gwern.net]]: the best-known example of hover previews
 - [[sources|Sources]]
+

@@ -18,9 +18,19 @@ The typical failures:
 - **Missing cue:** an interactive element that looks like plain text or decoration, so it is never found.
 - **False cue:** something that looks interactive and is not, such as static text in the link colour or a [[card]] that looks clickable.
 
+## Flashcard
+
+<details>
+<summary>In Don Norman's terms, what is the visible cue that shows an action is possible?</summary>
+
+A signifier.
+
+</details>
+
 ## Related
 
 - [[similarity|Similarity]]
 - [[accent-colour|Accent colour]]: often reserved to mean "you can act on this"
 - [[emphasis|Emphasis]]: how strongly an action is signalled
 - [[interaction-design-foundation|Interaction Design Foundation]]: has an overview page on affordances
+

@@ -10,8 +10,18 @@ The range is for running text meant to be read in sequence. Headings, labels, an
 
 Line length and [[line-height|line height]] are set together: the longer the line, the more space between lines it needs.
 
+## Flashcard
+
+<details>
+<summary>What line length is usually recommended for body text?</summary>
+
+About 45 to 75 characters per line, spaces included.
+
+</details>
+
 ## Related
 
 - [[line-height|Line height]]
 - [[ragged-edge|Ragged edge]]: the shape of the side where lines end
 - [[practical-typography|Practical Typography]]: treats line length as one of the few decisions that matter most
+

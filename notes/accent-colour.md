@@ -6,8 +6,18 @@ An accent works by scarcity. Against a mostly neutral interface, a single satura
 
 A common rule of thumb for proportions is 60–30–10: a dominant neutral, a secondary tone, and an accent on about a tenth of the surface.
 
+## Flashcard
+
+<details>
+<summary>Why does an accent colour weaken when it is also used for decoration?</summary>
+
+It works by scarcity. It stands out only while little else has that colour.
+
+</details>
+
 ## Related
 
 - [[colour-palette|Colour palette]]
 - [[emphasis|Emphasis]]
 - [[visual-weight|Visual weight]]
+

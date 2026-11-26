@@ -8,9 +8,19 @@ The classic failure is uniform spacing, where everything is the same distance fr
 
 Proximity is tried first. Only when it is not enough is a stronger tool such as [[common-region|common region]] added.
 
+## Flashcard
+
+<details>
+<summary>What is the classic failure of proximity?</summary>
+
+Uniform spacing: everything is the same distance from everything else.
+
+</details>
+
 ## Related
 
 - [[gap|Gap]]: the mechanism
 - [[spacing-scale|Spacing scale]]: the values
 - [[white-space|White space]]: what proximity is made of
 - [[common-region|Common region]]: the next tool to reach for
+

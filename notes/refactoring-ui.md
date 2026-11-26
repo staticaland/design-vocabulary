@@ -19,8 +19,18 @@ Its central habit is the one behind [[design-tokens|design tokens]]: decide a sm
 
 The book is paid, and sold as a PDF with video tutorials.
 
+## Flashcard
+
+<details>
+<summary>Who is Refactoring UI written for?</summary>
+
+Developers who are not designers.
+
+</details>
+
 ## Related
 
 - [[visual-polish|Visual polish]]: what the book is about, in this collection's words
 - [[polish-ui]]: a checklist covering much of the same ground
 - [[sources|Sources]]
+

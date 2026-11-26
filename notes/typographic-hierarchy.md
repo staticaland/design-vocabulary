@@ -10,8 +10,18 @@ The usual roles:
 
 A clear hierarchy uses a limited set of styles, each tied to a role. The warning sign is styles that are nearly the same, such as 15px and 16px, or medium and semibold, used for the same job. A difference too small to notice does not communicate, and reads as an error.
 
+## Flashcard
+
+<details>
+<summary>Two text styles are nearly the same, such as 15px and 16px. How does the difference read?</summary>
+
+As an error. A difference too small to notice does not communicate.
+
+</details>
+
 ## Related
 
 - [[type-scale|Type scale]]: the sizes
 - [[font-weight|Font weight]]: the weights
 - [[visual-hierarchy|Visual hierarchy]]
+

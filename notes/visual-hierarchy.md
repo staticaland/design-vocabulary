@@ -6,6 +6,15 @@ Every screen has a hierarchy whether or not one was designed. The question is wh
 
 Hierarchy is built from differences in [[visual-weight|visual weight]]: size, [[font-weight|font weight]], colour, [[contrast]], position, and surrounding space. It needs few levels, clearly separated. Three is often enough: primary, secondary, tertiary.
 
+## Flashcard
+
+<details>
+<summary>How many levels does a visual hierarchy often need?</summary>
+
+Three: primary, secondary, and tertiary.
+
+</details>
+
 ## Related
 
 - [[visual-weight|Visual weight]]: the raw material
@@ -13,3 +22,4 @@ Hierarchy is built from differences in [[visual-weight|visual weight]]: size, [[
 - [[typographic-hierarchy|Typographic hierarchy]]: hierarchy within text
 - [[squint-test|Squint test]]: how to check it
 - [[steering-words|Steering words]]: words for changing a hierarchy that is too flat, too loud, or too crowded
+

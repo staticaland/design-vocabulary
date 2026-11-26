@@ -10,9 +10,19 @@ The letter `x` is used because its top and bottom are flat. Round letters go sli
 
 The x-height is also what an icon is often centred on when it sits beside lowercase text.
 
+## Flashcard
+
+<details>
+<summary>Why is the letter <code>x</code> used to measure the height of the lowercase letters?</summary>
+
+Its top and bottom are flat. Round letters go slightly past the line.
+
+</details>
+
 ## Related
 
 - [[font-size|Font size]]: what the x-height is a fraction of
 - [[cap-height|Cap height]]: the same measurement for capitals
 - [[ascender|Ascender]], [[descender|Descender]]: the parts above and below it
 - [[type-vocabulary|Type vocabulary]]: a figure that shows the line
+

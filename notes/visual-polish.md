@@ -6,9 +6,19 @@ Polish is mostly the absence of small errors: a label two pixels off its neighbo
 
 Polish is checked on the rendered result, not the code. Code can look tidy and still render badly.
 
+## Flashcard
+
+<details>
+<summary>Where is visual polish checked?</summary>
+
+On the rendered result, not in the code.
+
+</details>
+
 ## Related
 
 - [[alignment|Alignment]], [[spacing-scale|Spacing scale]], [[visual-hierarchy|Visual hierarchy]]: the three areas where most polish issues live
 - [[squint-test|Squint test]]: a quick way to check the overall result
 - [[design-tokens|Design tokens]]: what keeps polish from eroding
 - [[steering-words|Steering words]]: for when the design needs a change of direction, not refinement
+

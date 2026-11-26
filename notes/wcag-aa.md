@@ -16,7 +16,17 @@ Disabled controls, pure decoration, and logos are exempt. AAA raises the text th
 
 Browser developer tools show the ratio for any text element, so it can be checked without calculating by hand.
 
+## Flashcard
+
+<details>
+<summary>What contrast ratio does WCAG AA require for normal text?</summary>
+
+4.5:1.
+
+</details>
+
 ## Related
 
 - [[contrast|Contrast]]
 - [[colour-palette|Colour palette]]
+

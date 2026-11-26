@@ -8,9 +8,19 @@ That strength has a cost. Every region adds lines and fills, which add [[visual-
 
 Regions nested inside regions lose their meaning quickly. See [[nesting]].
 
+## Flashcard
+
+<details>
+<summary>Two items share a box. A third sits closer to one of them, but outside the box. Which two read as a group?</summary>
+
+The two in the box. Common region is stronger than proximity.
+
+</details>
+
 ## Related
 
 - [[proximity|Proximity]]
 - [[card|Card]]
 - [[nesting|Nesting]]
 - [[padding|Padding]]
+

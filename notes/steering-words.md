@@ -16,7 +16,17 @@ The steering words covered so far:
 - [[quieter|Quieter]]: less intense
 - [[distill|Distill]]: reduced to the essentials
 
+## Flashcard
+
+<details>
+<summary>Most design vocabulary names parts. What do steering words describe?</summary>
+
+The direction of a change, such as bolder or quieter.
+
+</details>
+
 ## Related
 
 - [[visual-polish|Visual polish]]: refining a design without changing its direction, where a steering word changes it
 - [[visual-hierarchy|Visual hierarchy]], [[visual-weight|Visual weight]], [[emphasis|Emphasis]]: what the steering words act on
+

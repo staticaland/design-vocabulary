@@ -12,8 +12,18 @@ A typical UI palette has:
 
 A palette is only useful if each colour has a job and keeps it. If blue means "clickable" in one place, blue decoration elsewhere misleads.
 
+## Flashcard
+
+<details>
+<summary>A UI palette has neutrals and an accent colour. What is the third kind of colour, such as red for error?</summary>
+
+Semantic colours: colours with a fixed meaning.
+
+</details>
+
 ## Related
 
 - [[accent-colour|Accent colour]]
 - [[design-tokens|Design tokens]]: how a palette is named and enforced
 - [[contrast|Contrast]]
+

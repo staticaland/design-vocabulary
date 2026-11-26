@@ -8,7 +8,17 @@ Tokens come in layers. A **primitive** token names a raw value (`blue-600`). A *
 
 A **one-off value** is the opposite: a literal typed directly into one component (`margin-top: 13px`). One-offs are how a [[spacing-scale|spacing scale]], [[type-scale|type scale]], or [[colour-palette|palette]] drifts, so a polish fix should use an existing token rather than add a new literal.
 
+## Flashcard
+
+<details>
+<summary>A primitive token names a raw value. What does a semantic token name?</summary>
+
+A purpose, such as `color-action`.
+
+</details>
+
 ## Related
 
 - [[spacing-scale|Spacing scale]], [[type-scale|Type scale]], [[colour-palette|Colour palette]]: the systems that tokens encode
 - [[visual-polish|Visual polish]]
+

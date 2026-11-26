@@ -13,9 +13,19 @@ The usual failure is too little, from treating empty space as wasted space and f
 
 Amount is a matter of purpose, not correctness. A dense table for experts and a sparse landing page can both be right.
 
+## Flashcard
+
+<details>
+<summary>What is macro white space?</summary>
+
+The large spaces between sections and around the content as a whole, such as page margins.
+
+</details>
+
 ## Related
 
 - [[proximity|Proximity]]: white space as a grouping tool
 - [[padding|Padding]], [[gap|Gap]]: where the space lives in a layout
 - [[spacing-scale|Spacing scale]]: the values
 - [[quieter|Quieter]], [[distill|Distill]]: directions that usually add white space
+

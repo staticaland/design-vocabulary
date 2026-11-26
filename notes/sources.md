@@ -33,3 +33,12 @@ What the format of this collection, and of its website, is modelled on.
 - [[gwern-net|Gwern.net]]: previews when hovering over a link
 - [[quartz|Quartz]]: a free tool for publishing notes like these
 - [[obsidian-publish|Obsidian Publish]]: the hosted equivalent
+
+## Flashcard
+
+<details>
+<summary>Which two skills for coding agents did this collection begin as a way to understand?</summary>
+
+polish-ui and Impeccable.
+
+</details>

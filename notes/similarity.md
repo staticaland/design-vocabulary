@@ -11,9 +11,19 @@ This makes similarity the principle behind consistency. If all buttons look like
 
 Breaking similarity on purpose is a form of [[emphasis]]. One item that differs from its neighbours draws the eye, which is how a primary button stands out in a row of secondary ones.
 
+## Flashcard
+
+<details>
+<summary>What can similarity do that proximity and common region cannot?</summary>
+
+Work across distance.
+
+</details>
+
 ## Related
 
 - [[gestalt-principles|Gestalt principles]]
 - [[proximity|Proximity]], [[common-region|Common region]]: grouping by position instead of appearance
 - [[design-tokens|Design tokens]]: a way to keep like things looking alike
 - [[affordance|Affordance]]: similarity is how users learn what can be clicked
+

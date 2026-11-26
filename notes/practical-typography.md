@@ -12,8 +12,18 @@ The best starting point is the short chapter "Typography in ten minutes", which 
 
 It goes much deeper on type than these notes do. The notes cover only what a polish review needs: [[typographic-hierarchy|typographic hierarchy]], a [[type-scale|type scale]], [[font-weight|font weight]], and the [[baseline]].
 
+## Flashcard
+
+<details>
+<summary>Which chapter of Practical Typography is the best starting point?</summary>
+
+"Typography in ten minutes".
+
+</details>
+
 ## Related
 
 - [[typographic-hierarchy|Typographic hierarchy]], [[type-scale|Type scale]], [[font-weight|Font weight]]
 - [[refactoring-ui|Refactoring UI]]: covers type for interfaces, where this covers type for documents
 - [[sources|Sources]]
+

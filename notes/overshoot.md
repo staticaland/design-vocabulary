@@ -11,8 +11,18 @@ Two practical consequences:
 - Measure a font on flat letters such as `x`, `z`, and `H`. Round letters give a number that is a little too large.
 - The same correction applies to icons and shapes. A circle beside a square of the same size looks smaller, and is drawn slightly larger to match.
 
+## Flashcard
+
+<details>
+<summary>Why is an <code>o</code> drawn slightly taller than an <code>x</code>?</summary>
+
+A curve touches a line at a single point, while a flat edge sits along it. At exactly the same height the `o` would look smaller.
+
+</details>
+
 ## Related
 
 - [[optical-alignment|Optical alignment]]
 - [[baseline|Baseline]], [[x-height]], [[cap-height|Cap height]]: the lines that are overshot
 - [[type-vocabulary|Type vocabulary]]: a figure that shows it
+

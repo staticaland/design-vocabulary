@@ -11,9 +11,19 @@ The principles most used in UI design:
 - **[[similarity|Similarity]]:** things that look alike (colour, shape, size) are seen as related.
 - **Continuity:** things on a line or curve are seen as belonging together. This is why [[alignment]] groups.
 
+## Flashcard
+
+<details>
+<summary>Which Gestalt principle explains why alignment groups things?</summary>
+
+Continuity: things on a line or curve are seen as belonging together.
+
+</details>
+
 ## Related
 
 - [[proximity|Proximity]]
 - [[common-region|Common region]]
 - [[similarity|Similarity]]
 - [[squint-test|Squint test]]: a way to see the groupings perception actually produces
+

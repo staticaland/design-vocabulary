@@ -10,9 +10,19 @@ Descenders also explain why a row of words can look uneven when their baselines 
 
 Underlines cross descenders. Browsers leave gaps in the underline around them by default.
 
+## Flashcard
+
+<details>
+<summary>Why can a label such as "Save" look too high in its button?</summary>
+
+The line keeps room for descenders, and the word has none, so that space sits empty below it.
+
+</details>
+
 ## Related
 
 - [[ascender|Ascender]]: the part above the x-height
 - [[baseline|Baseline]]
 - [[line-height|Line height]]: tight lines make descenders touch the ascenders below
 - [[type-vocabulary|Type vocabulary]]: a figure that shows the line
+

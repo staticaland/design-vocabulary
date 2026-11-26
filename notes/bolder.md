@@ -18,6 +18,15 @@ What works:
 
 A useful check is to imagine the section without its words. If the structure alone no longer shows what matters, the boldness was only in the text size.
 
+## Flashcard
+
+<details>
+<summary>Why does making every element louder fail to make a design bolder?</summary>
+
+Emphasis is relative. When everything is louder, nothing stands out.
+
+</details>
+
 ## Related
 
 - [[quieter|Quieter]]: the opposite direction
@@ -27,3 +36,4 @@ A useful check is to imagine the section without its words. If the structure alo
 ## Source
 
 The word is used here as in the `bolder` command of [[impeccable|Impeccable]].
+

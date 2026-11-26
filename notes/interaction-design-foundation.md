@@ -10,8 +10,18 @@ It calls the library a "Design Compendium". Each topic, such as [[affordance|aff
 
 For this collection it works as a much larger dictionary. When a term here needs more depth or a second explanation, there is probably a topic page for it. It covers the whole of UX design, so visual vocabulary such as the [[gestalt-principles|Gestalt principles]] and [[visual-hierarchy|visual hierarchy]] is one part among many.
 
+## Flashcard
+
+<details>
+<summary>What is the short name of the Interaction Design Foundation?</summary>
+
+IxDF.
+
+</details>
+
 ## Related
 
 - [[nielsen-norman-group|Nielsen Norman Group]]: a similar library, based on the firm's own research
 - [[laws-of-ux|Laws of UX]]: much shorter, with one page per principle
 - [[sources|Sources]]
+
