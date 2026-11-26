@@ -52,6 +52,9 @@ for (const file of files) {
   if (!titleMatch) errors.push(`${file}: no "# Title" heading`);
   const title = titleMatch ? titleMatch[1].trim() : id;
   const content = body.replace(/^#\s+.+\n/m, '').trim();
+  if (!/\n## Flashcard\n\n<details>\n<summary>.+<\/summary>\n\n[\s\S]+?\n\n<\/details>(\n\n## Related\n|$)/.test(content)) {
+    errors.push(`${file}: no "## Flashcard" section with a <details> block, above "## Related" or at the end`);
+  }
 
   const links = [];
   // Links inside code spans and code blocks are left alone, as in Obsidian.
